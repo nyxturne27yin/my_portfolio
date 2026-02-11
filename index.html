@@ -5,60 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tanisha's Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAVIGATION -->
-  <nav>
+  <nav class="navbar">
     <div class="logo">Tanisha</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#interests">Interests</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO / INTRO -->
-  <header>
+  <!-- HERO -->
+  <header class="hero">
     <div class="hero-text">
-      <h1>Hi, I'm Tashnin Khan Tanisha</h1>
-      <p>I love exploring ideas and turning them into something meaningful.
-      </p>
+      <h1>Hi, I'm Tanisha Khan</h1>
+      <p>Computer Science & Engineering Undergraduate (3rd Year)| Aspiring Software Engineer</p>
     </div>
-    <img src="Tanisha in uap .jpg" alt="Profile Picture" class="profile-image">
-    <!-- Floating abstract shapes -->
-    <div class="float-circle circle1"></div>
-    <div class="float-circle circle2"></div>
+    <img src="Tanisha in uap .jpg" alt="Tanisha Profile" class="profile-image">
   </header>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" class="about-section section">
     <h2>About Me</h2>
-    <div class="about-container">
-      <div class="about-note">I love blending creativity with problem-solving.</div>
-      <div class="about-note">Exploring new ideas keeps me curious and inspired.</div>
-      <div class="about-note">I strive to make every project meaningful and impactful.</div>
+    <div class="card-grid about-container">
+     <div class="card">I'm Tanisha, a curious thinker who blends creativity with logic. I love exploring ideas, solving problems, and making concepts come alive through projects and experiences.</div>
+<div class="card">I thrive on learning,whether it’s coding, understanding human behavior, or experimenting with new skills and make something that brings a bit of joy or usefulness to someone’s day.</div>
+<div class="card">Life, for me, is a mix of exploring new ideas, laughing at small things, and making space for both learning and fun.</div>
+
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section id="education">
+  <section id="education" class="education-section section">
     <h2>Education</h2>
-    <div class="education-container">
-      <div class="education-card">
+    <div class="card-grid">
+      <div class="card">
         <h3>Bachelor of Science</h3>
         <p>Computer Science, University of Asia Pacific</p>
         <span>2023 - ongoing</span>
       </div>
-      <div class="education-card">
+      <div class="card">
         <h3>HSC</h3>
         <p>YWCA Higher Secondary Girl's School</p>
         <span>2020 - 2022</span>
       </div>
-      <div class="education-card">
+      <div class="card">
         <h3>SSC</h3>
         <p>Dhanmondi Kamrunessa Govt. Girl's High School</p>
         <span>2012 - 2020</span>
@@ -67,34 +65,59 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section id="skills" class="skills-section section">
     <h2>Skills & Tools</h2>
-    <div class="skills-container">
-      <div class="skill-card">Java</div>
-      <div class="skill-card">Data Structures & Algorithms</div>
-      <div class="skill-card">C / C++</div>
-      <div class="skill-card">Python Programming</div>
-      <div class="skill-card">SQL</div>
+    <div class="pill-grid">
+      <span>Java</span>
+      <span>Python</span>
+      <span>C / C++</span>
+      <span>Data Structures & Algorithms</span>
+      <span>SQL</span>
+      <span>HTML & CSS</span>
     </div>
   </section>
 
+
+  <!-- PROJECTS -->
+<section id="projects" class="section projects-section">
+  <h2>Projects</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>University Arcade System</h3>
+      <span>Java</span>
+      <p>A fun arcade system I built for the university using Java and GUI elements.</p>
+      <a href="https://drive.google.com/drive/folders/1gzzHvtTU5rD0cFGzO-pKluxm2nD9OkGS?usp=drive_link" target="_blank" class="project-link">View Project</a>
+    </div>
+    <div class="card">
+      <h3>Mental Health Portal</h3>
+      <span>SQL </span>
+      <p>A web portal for mental health support, with database-backed interactive features.</p>
+      <a href="https://drive.google.com/drive/folders/1n9IWbQ4YYcB-2P_r1UyonMe7VCpRRoqZ?usp=drive_link">View Project</a>
+    </div>
+  </div>
+</section>
+
+
+
   <!-- INTERESTS -->
-  <section id="interests">
+  <section id="interests" class="interests-section section">
     <h2>Interests</h2>
-    <div class="interests-container">
-      <div class="interest-card">AI & Machine Learning</div>
-      <div class="interest-card">Human Behavior & Psychology</div>
-      <div class="interest-card">Problem Solving & Puzzles</div>
-      <div class="interest-card">Creative Writing</div>
+    <div class="card-grid">
+      <div class="card">AI & Machine Learning</div>
+      <div class="card">Human Behavior & Psychology</div>
+      <div class="card">Travelling</div>
+      <div class="card">Creative Writing</div>
+      <div class="card">Reading Books</div>
+      <div class="card">Makeup Artistry</div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <footer id="contact">
+  <footer id="contact" class="footer section">
     <p>Let's connect:</p>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/tashnin-khan-tanisha-b4b3373ab?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
-      <a href="https://github.com/nyxturne27yin">GitHub</a>
+      <a href="https://linkedin.com/in/tashnin-khan" target="_blank">LinkedIn</a>
+      <a href="https://github.com/nyxturne27yin" target="_blank">GitHub</a>
       <a href="tanishakhan2704@gmail.com">Email</a>
     </div>
     <p>&copy; 2026 Tanisha</p>
