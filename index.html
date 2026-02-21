@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Tashnin Khan Tanisha | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Tanisha</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-links hamburger-menu">
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+    <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+    <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO/PROFILE -->
+<section class="hero section" id="profile">
+  <div class="hero-text">
+    <p class="intro">Hello, I'm</p>
+    <h1>Tashnin Khan Tanisha</h1>
+    <p class="subtitle"> A 3rd Year Undergrad Computer Science Student</p>
+  </div>
+  <div class="hero-image">
+    <img src="Assets\PRP.jpg" class="profile-image">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="about-image">
+      <img src="Assets\ABOUT ME.jpg" alt="About Tanisha">
+    </div>
+    <div class="about-text">
+      <p>I am a Computer Science student passionate about problem solving, programming, and building practical software solutions. I enjoy learning new technologies, strengthening my logical thinking, and applying concepts through academic and personal projects.Life, for me, is a mix of exploring new ideas, laughing at small things, and making space for both learning and fun.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <h2>Education</h2>
+  <div class="card education-card">
+    <h3>BSc in Computer Science & Engineering | University of Asia Pacific</h3>
+    <p>Currently Pursuing</p>
+    <ul>
+      <li>	
+Object Oriented Programming II and Web Programming(Python)</li>
+      <li>Computer Architecture and Organization</li>
+      <li>System Analysis and Design</li>
+      <li>Project Strategy and Management</li>
+      <li>Business and Entrepreneurship</li>
+      <li>Bioinformatics Engineering</li>
+
+    </ul>
+  </div>
+  <div class="card education-card">
+    <h3>HSC | YWCA Higher Secondary Girl's School</h3>
+    <p>Completed 2022 | Group: Science</p>
+  </div>
+
+  <div class="card education-card">
+    <h3>SSC | Dhanmondi Govt Girl's High School</h3>
+    <p>Completed 2020 | Group: Science</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="pill-grid">
+    <span>C++</span>
+    <span>Python</span>
+    <span>Java</span>
+    <span>HTML & CSS</span>
+    <span>Data Structures</span>
+    <span>SQL</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3><a href="https://drive.google.com/drive/folders/1gzzHvtTU5rD0cFGzO-pKluxm2nD9OkGS?usp=drive_link" target="_blank">Java Application</a></h3>
+    <p>Demonstrated OOP concepts including classes, inheritance, and data handling.</p>
+  </div>
+  <div class="card">
+    <h3><a href="https://drive.google.com/drive/folders/1n9IWbQ4YYcB-2P_r1UyonMe7VCpRRoqZ?usp=drive_link" target="_blank">Database Project</a></h3>
+    <p>Designed a relational database with schema, queries, and normalization.</p>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="section" id="achievements">
+  <h2>Achievements</h2>
+  <div class="card">
+    <h3>FAll 2023 Vice Chancellor Awardee</h3>
+ 
+  </div>
+  <div class="card">
+    <h3>Spring 2024 Dean Awardee</h3>
+  
+  </div>
+  <div class="card">
+    <h3>FAll 2024 Vice Chancellor Awardee</h3>
+ 
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section class="section" id="hobbies">
+  <h2>Hobbies</h2>
+  <div class="hobbies-grid">
+    <span>Studying Human Behavior & Psychology</span>
+    <span>Travelling</span>
+    <span>Creative Design & Personal Projects</span>
+    <span>Creative Writing</span>
+    <span>Reading Books</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-links">
+    <a href="mailto:tanishakhan2704@gmail.com" target="_blank" class="contact-btn">EMAIL</a>
+    <a href="https://linkedin.com/in/tashnin-khan" target="_blank" class="contact-btn">LINKEDIN</a>
+    <a href="https://github.com/nyxturne27yin" target="_blank" class="contact-btn">GITHUB</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Tanisha. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

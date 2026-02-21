@@ -1,0 +1,101 @@
+/* GLOBAL RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:#fff;color:#000;line-height:1.7;}
+
+/* NAVBAR */
+.navbar{position:sticky;top:0;z-index:100;background:#fff;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #000;}
+.logo{font-size:1.8rem;font-weight:bold;}
+.nav-links{list-style:none;display:flex;gap:2rem;}
+.nav-links a{text-decoration:none;color:#000;font-weight:500;position:relative;transition:0.3s;}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#000;transition:0.3s ease;}
+.nav-links a:hover::after{width:100%;}
+
+/* HAMBURGER */
+.hamburger-icon{display:none;flex-direction:column;cursor:pointer;width:28px;height:22px;justify-content:space-between;}
+.hamburger-icon span{display:block;height:3px;background:#000;border-radius:2px;transition:.3s;}
+.hamburger-menu{display:none;flex-direction:column;background:#fff;position:absolute;top:60px;right:0;width:220px;padding:15px;border-left:1px solid #000;}
+.hamburger-menu.open{display:flex;}
+
+/* HERO */
+.hero{display:flex;justify-content:space-between;align-items:center;padding:5rem 2rem;flex-wrap:wrap;gap:2rem;}
+.hero-text h1{font-size:3rem;margin:0.3rem 0;}
+.hero-text p{margin-top:0.5rem;color:#333;}
+.profile-image {
+  width: 350px;               /* Adjust size as needed */
+  height: 350px;              /* Make height equal to width for perfect circle */
+  border-radius: 50%;         /* Circle */
+  border: 3px solid black;    /* Black border */
+  object-fit: cover;          /* Ensure the image covers the circle without stretching */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.profile-image:hover {
+  transform: scale(1.05);     /* slight zoom on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ABOUT */
+.about-container{display:flex;gap:2rem;align-items:center;}
+.about-text{flex:1;}
+.about-image img{width:250px;border-radius:20px;box-shadow:0 10px 20px rgba(0,0,0,0.1);transition:.3s;}
+about-image img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;           /* Square dimension control */
+  border-radius: 8px;         /* Slightly rounded corners, keep square-ish */
+  object-fit: cover;          /* maintain aspect ratio without stretching */
+  border: 2px solid black;    /* subtle black border */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* SECTIONS */
+.section{padding:5rem 2rem;}
+.section h2{font-size:2.2rem;margin-bottom:2.5rem;border-bottom:2px solid #000;padding-bottom:0.5rem;display:inline-block;}
+
+/* CARDS */
+.card{background:#f9f9f9;padding:1.5rem;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.05);margin-bottom:1.5rem;transition:.3s;}
+.card:hover{box-shadow:0 10px 25px rgba(0,0,0,0.1);transform:translateY(-5px);}
+
+/* PILL SKILLS */
+.pill-grid{display:flex;flex-wrap:wrap;gap:1rem;}
+.pill-grid span{padding:0.7rem 1.5rem;border-radius:999px;background:#000;color:#fff;font-weight:500;transition:0.3s;}
+.pill-grid span:hover{background:#333;}
+
+/* HOBBIES GRID */
+.hobbies-grid{display:flex;flex-wrap:wrap;gap:1rem;}
+.hobbies-grid span{background:#000;color:#fff;padding:0.8rem 1.2rem;border-radius:15px;transition:0.3s;}
+.hobbies-grid span:hover{background:#333;}
+
+.contact-links{display:flex;justify-content:center;gap:3rem;margin-top:2rem;flex-wrap:wrap;}
+.contact-btn{
+  padding:0.8rem 1.5rem;
+  font-weight:bold;
+  color:#000;
+  background:#fff;
+  border:2px solid #000;
+  border-radius:8px;
+  text-decoration:none;
+  transition:all 0.3s ease;
+}
+.contact-btn:hover{
+  background:#000;
+  color:#fff;
+  transform:scale(1.05);
+}
+/* BUTTONS */
+.btn{display:none;}
+.btn-outline{display:none;}
+
+/* FOOTER */
+.footer{text-align:center;padding:3rem 2rem;border-top:1px solid #000;color:#000;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero{flex-direction:column;text-align:center;}
+  .nav-links{display:none;}
+  .hamburger-icon{display:flex;}
+  .about-container{flex-direction:column;text-align:center;}
+  .profile-image{width:200px;}
+  .about-image img{width:200px;}
+}
